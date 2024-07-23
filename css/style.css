@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    color: white;
+}
+
+body, 
+button, 
+input, 
+select, 
+textarea{
+font-family: 'Heebo', sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+header{
+    height: 80px;
+}
+
+header #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem; 
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    color: white;
+}
+
+header #navbar .nav-brand{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600; 
+
+}
+header #navbar .nav-brand span{
+color: #2387f8;
+}
+
+header #navbar .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+header #navbar .nav-list .nav-item a{
+    text-decoration:  none;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+header #navbar .nav-list .nav-item a:hover{
+color:#005fcc;
+transition: color 0.3s;
+}
+
+/* Section banner*/
+main{
+    margin-top: 6rem;
+}
+main #banner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+main #banner .banner-content .banner-content-title{
+font-size: 44px;
+font-weight: 700;
+margin-bottom: 40px;
+}
+main #banner .banner-content .banner-content-title span{
+    color: #1699f0;
+}
+main #banner .banner-content .banner-content-subtitle{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+max-width: 500px;
+margin-bottom: 38px;
+}
+main #banner .banner-content .banner-content-btn{
+background-color: transparent;
+color: white;
+font-size: 20px;
+padding: 8px 24px;
+border: 2px solid #005fcc ;
+border-radius: 6px;
+cursor: pointer;
+}
+main #banner .banner-content .banner-content-btn:hover{
+    background-color: #005fcc;
+    transition: 0.3s;
+
+}
+
+main #banner .banner-img{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Section Posts*/
+
+section#posts{
+    margin-top: 85px;
+    padding: 50px 0;
+}
+
+section#posts .posts-content{
+    max-width: 1200px;
+    padding: 0 2;
+    margin: 0 auto;
+}
+
+section#posts .posts-content .posts-content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+section#posts .posts-content .postes-content-header .section-title{
+    font-size: 22px;
+    font-weight: 500;
+}
+section#posts .postes-content-header .view-all-link{
+text-decoration: none;
+color: #1699f0;
+}
+
+section#posts .posts-content .posts-cards{
+    display: flex;
+    gap: 20px;
+
+
+}
+section#posts .posts-content .posts-cards .post-card{
+    padding: 50px;
+    border: 2px solid #1699f0 ;
+    border-radius: 5px;
+
+
+}
+section#posts .posts-content .posts-cards .post-card h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 37px;
+}
+
+section#projects{
+    margin-top: 50px;
+    padding: 50px 50px;
+}
+
+section#projects .project-header h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+section#projects .project-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+section#projects .project-content .project-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 1rem;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #005fcc;
+    border-radius: 3px;
+}
+section#projects .project-content .project-item img{
+width: 300px;
+height: 200px;
+}
+section#projects .project-content .project-item .item-content p{
+    margin-bottom: 12px;
+}
+
+section#projects .project-content .project-item  .item-content-btns .deploy{
+    background-color: transparent;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 2px solid #005fcc ;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 7px;
+}
+section#projects .project-content .project-item  .item-content-btns .git{
+    background-color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 7px;
+}
