@@ -9,7 +9,8 @@ body,
 button, 
 input, 
 select, 
-textarea{
+textarea,
+footer{
 font-family: 'Heebo', sans-serif;
 }
 
@@ -59,6 +60,9 @@ header #navbar .nav-list .nav-item a:hover{
 color:#005fcc;
 transition: color 0.3s;
 }
+header #navbar .menu-hamburguer{
+    display: none;
+}
 
 /* Section banner*/
 main{
@@ -101,23 +105,20 @@ main #banner .banner-content .banner-content-btn:hover{
     transition: 0.3s;
 
 }
-
 main #banner .banner-img{
     border-radius: 50%;
     width: 100%;
     max-width: 300px;
 }
-
 /* Section Posts*/
-
 section#posts{
     margin-top: 85px;
-    padding: 50px 0;
+    padding: 50px 25px;
 }
 
 section#posts .posts-content{
     max-width: 1200px;
-    padding: 0 2;
+    padding: 0 2px;
     margin: 0 auto;
 }
 
@@ -155,42 +156,40 @@ section#posts .posts-content .posts-cards .post-card h3{
     font-weight: 700;
     margin-bottom: 37px;
 }
-
 section#projects{
     margin-top: 50px;
     padding: 50px 50px;
 }
-
 section#projects .project-header h3{
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
 }
-
 section#projects .project-content{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    padding: 50px;
 }
-
 section#projects .project-content .project-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 2rem;
     gap: 1rem;
-    width: 600px;
-    height: 300px;
+    width: 37vw;
+    height: 47vh;
     border: 1px solid #005fcc;
     border-radius: 3px;
 }
 section#projects .project-content .project-item img{
-width: 300px;
-height: 200px;
+width: 15vw;
+height: 20vh;
+border-radius: 4px;
 }
 section#projects .project-content .project-item .item-content p{
     margin-bottom: 12px;
+    font-size: 10px;
 }
 
 section#projects .project-content .project-item  .item-content-btns .deploy{
@@ -201,6 +200,7 @@ section#projects .project-content .project-item  .item-content-btns .deploy{
     border-radius: 6px;
     cursor: pointer;
     margin-right: 7px;
+    margin-bottom: 7px;
 }
 section#projects .project-content .project-item  .item-content-btns .git{
     background-color: black;
@@ -210,4 +210,66 @@ section#projects .project-content .project-item  .item-content-btns .git{
     border-radius: 6px;
     cursor: pointer;
     margin-right: 7px;
+}
+/* section Rodapé*/
+section#rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+section#rodape .rodape-brand{
+    font-size: 30px;
+    text-decoration: none;
+}
+section#rodape .rodape-brand span{
+color: #1699f0;
+}
+section#rodape .redes-sociais-list{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+section#rodape .redes-sociais-list .rede-sociais-item .rede-social-link{
+    text-decoration: none;
+}
+
+/* Responsividade */ 
+
+@media (min-width: 600px) and (max-width: 1316px) {
+    #projects .project-content{
+        flex-wrap: nowrap;
+        padding: 5rem;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    header #navbar .menu-hamburguer{
+        display: block;
+    }
+    header #navbar .nav-list{
+        display: none;
+    }
+    main #banner{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    }
+section#posts .posts-content .posts-cards{
+    flex-direction: column;
+}
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    section#rodape{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    section#rodape .redes-sociais-list{
+        flex-direction: column;
+        align-items: center;
+    }
 }
